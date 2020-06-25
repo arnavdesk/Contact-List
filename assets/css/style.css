@@ -1,0 +1,139 @@
+body{
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    margin: 3px;
+}
+
+#card{
+    transition: all 0.4 ease-in-out;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px slategray;
+    height: max-content;
+    padding: 10px;
+    background-color: whitesmoke;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#input-section{
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+#input-bar{
+    border: 1px solid black;
+    font-size: 30px;
+    border-radius: 10px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#heading-bar{
+    border: 2px solid black ;
+    border-radius: 10px ;
+    padding: 5px;
+    margin: 0px;
+}
+
+#itemInput{
+    border-radius: 6px;
+    border:0px;
+    box-shadow: 0px 0px 10px 3px slategray;
+    outline: none;
+    font-size: 23px;
+    background-color: whitesmoke;
+    padding: 2px 10px;
+    height: 30px;
+    width: 50%; 
+    margin: 10px;
+}
+
+#item-list{
+    transition: all 0.5s ease-in-out;
+    perspective: 1000px;
+    min-height: 20px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#item-list-division{
+    transition: all 0.5s ease-in-out ;
+    overflow: scroll;
+    max-height: 60vh;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+.list-item{
+    opacity: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.list-item:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.phone-view{
+    font-weight: 100;
+    color: gray;
+}
+
+.delete{
+    margin-left: auto;
+    color: black;
+}
+
+.add-btn{
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.add-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:900px)
+{
+    #card{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    #to-do-card{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
